@@ -1,6 +1,5 @@
 import React from 'react';
 import {Container, Grid} from '@mui/material';
-import styles from '../styles/chat.module.scss'
 
 const Loader = () => {
   return(
@@ -14,6 +13,7 @@ const Loader = () => {
           container 
           alignItems={'center'} 
           direction={'column'}>
+            {/* это дефолтный лоадер из MUI - каждый див в нем это просто штрих в круге загрузки */}
           <div className="lds-default"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </Grid>
       </Grid>

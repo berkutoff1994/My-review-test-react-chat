@@ -10,6 +10,7 @@ function AppRouter() {
   return(
     <Routes>
       {user
+      //здесь можно убрать проверку тернарным оператором, т.к. переменная toPath всегда
         ? (privateRoutes.map(({ path, Element, toPath }) => <Route key={path} path={path} element={<Element to={toPath ? toPath : ''}/>} />))
         : publicRoutes.map(({ path, Element, toPath }) => <Route key={path} path={path} element={<Element to={toPath ? toPath : ''}/>} />)}
     </Routes>

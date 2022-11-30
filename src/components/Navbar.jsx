@@ -14,7 +14,7 @@ function Navbar() {
       <Toolbar variant={'dense'}>
         <Grid container justifyContent={"flex-end"}>
           {user 
-          ? 
+          ? //шорткат
           <Button onClick={() => auth.signOut()} variant="contained">Выйти</Button> 
           : 
           <NavLink style={{textDecoration: 'none'}} to={LOGIN_ROUTE}>
